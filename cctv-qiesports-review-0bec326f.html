@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>企鹅体育 · 简明指南与访问知识库</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f7f7f9;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #1f1f24;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1rem 4rem;
+    }
+
+    .page {
+      max-width: 640px;
+      width: 100%;
+      background: #ffffff;
+      border-radius: 28px;
+      padding: 2.5rem 2rem 3rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04), 0 2px 8px rgba(0, 0, 0, 0.02);
+      transition: box-shadow 0.2s;
+    }
+
+    h1 {
+      font-size: 1.9rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.25rem;
+      color: #121216;
+    }
+
+    .subhead {
+      font-size: 0.95rem;
+      color: #6d6d78;
+      border-bottom: 1px solid #eaeaea;
+      padding-bottom: 1.25rem;
+      margin-bottom: 1.75rem;
+      display: flex;
+      align-items: baseline;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .subhead span {
+      background: #ececf0;
+      padding: 0.1rem 0.75rem;
+      border-radius: 40px;
+      font-size: 0.8rem;
+      color: #3b3b46;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin: 2rem 0 0.75rem;
+      color: #1e1e26;
+      letter-spacing: -0.01em;
+    }
+
+    h2:first-of-type {
+      margin-top: 0;
+    }
+
+    p {
+      margin-bottom: 1.1rem;
+      font-size: 0.98rem;
+      color: #2b2b33;
+    }
+
+    a {
+      color: #1f5b9e;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s, color 0.15s;
+      font-weight: 450;
+    }
+
+    a:hover {
+      border-bottom-color: #1f5b9e;
+      color: #0b3b6b;
+    }
+
+    .directory-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin: 1.5rem 0 1.75rem;
+    }
+
+    .dir-card {
+      background: #f3f3f6;
+      border-radius: 18px;
+      padding: 1rem 1.2rem;
+      transition: background 0.2s;
+    }
+
+    .dir-card:hover {
+      background: #eaeaf0;
+    }
+
+    .dir-card .label {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: #6b6b78;
+      font-weight: 450;
+      margin-bottom: 0.2rem;
+    }
+
+    .dir-card .title {
+      font-size: 1.05rem;
+      font-weight: 500;
+      margin-bottom: 0.25rem;
+      color: #121216;
+    }
+
+    .dir-card .desc {
+      font-size: 0.85rem;
+      color: #4a4a56;
+      line-height: 1.4;
+    }
+
+    .notice-box {
+      background: #faf6ef;
+      border-left: 3px solid #c9a86c;
+      padding: 1rem 1.2rem;
+      border-radius: 12px;
+      margin: 1.8rem 0;
+    }
+
+    .notice-box p {
+      margin-bottom: 0.3rem;
+      font-size: 0.93rem;
+    }
+
+    .faq-mini {
+      margin: 1.6rem 0 0.8rem;
+    }
+
+    .faq-item {
+      padding: 0.6rem 0;
+      border-bottom: 1px solid #efeff1;
+    }
+
+    .faq-item:last-child {
+      border-bottom: none;
+    }
+
+    .faq-q {
+      font-weight: 480;
+      color: #191922;
+      font-size: 0.96rem;
+    }
+
+    .faq-a {
+      font-size: 0.9rem;
+      color: #4b4b58;
+      margin-top: 0.15rem;
+      padding-left: 0.2rem;
+    }
+
+    .related-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.2rem;
+      margin-top: 1.75rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid #ebebed;
+      font-size: 0.9rem;
+    }
+
+    .related-links strong {
+      font-weight: 480;
+      color: #2c2c38;
+    }
+
+    .footer-note {
+      margin-top: 2.2rem;
+      font-size: 0.8rem;
+      color: #8a8a94;
+      text-align: center;
+      border-top: 1px solid #ebebed;
+      padding-top: 1.2rem;
+    }
+
+    @media (max-width: 480px) {
+      .page {
+        padding: 1.8rem 1.2rem 2.2rem;
+      }
+      .directory-grid {
+        grid-template-columns: 1fr;
+      }
+      h1 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <h1>企鹅体育 · 简明知识库</h1>
+  <div class="subhead">
+    访问指南与实用指引
+    <span>v1.0</span>
+  </div>
+
+  <p>
+    如果你是第一次接触 <a href="https://cctv-qiesports.com">企鹅体育</a>，
+    这里是一份温和的起点梳理。我们整理了平台的基本结构、常用入口和访问时值得留意的细节，
+    帮助你更快地找到自己感兴趣的内容，避免在信息中绕路。
+  </p>
+
+  <!-- 目录感布局：卡片式分类 -->
+  <div class="directory-grid">
+    <div class="dir-card">
+      <div class="label">导航</div>
+      <div class="title">赛事直播</div>
+      <div class="desc">篮球、足球、综合赛事日程与实时解说</div>
+    </div>
+    <div class="dir-card">
+      <div class="label">社区</div>
+      <div class="title">互动与讨论</div>
+      <div class="desc">弹幕、聊天室、赛事话题和用户动态</div>
+    </div>
+    <div class="dir-card">
+      <div class="label">资源</div>
+      <div class="title">回放与集锦</div>
+      <div class="desc">赛后录像、高光片段和专题系列</div>
+    </div>
+    <div class="dir-card">
+      <div class="label">工具</div>
+      <div class="title">个人中心</div>
+      <div class="desc">关注主播、订阅赛事与偏好设置</div>
+    </div>
+  </div>
+
+  <h2>访问前留意</h2>
+  <div class="notice-box">
+    <p>🔹 建议使用最新版浏览器（Chrome / Edge / Safari）获得完整功能体验。</p>
+    <p>🔹 部分直播内容可能需要登录后查看，注册流程简洁，使用常用邮箱即可。</p>
+    <p>🔹 如遇到区域限制或加载延迟，可尝试刷新页面或切换网络环境。</p>
+  </div>
+
+  <h2>常见问题摘要</h2>
+  <div class="faq-mini">
+    <div class="faq-item">
+      <div class="faq-q">如何找到正在进行的比赛？</div>
+      <div class="faq-a">首页顶部「直播」栏目会排列当前热门场次，按时间排序。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">可以只看某个主播的频道吗？</div>
+      <div class="faq-a">在搜索框输入主播昵称，或从「关注」列表直接进入。推荐使用订阅功能。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">赛事回放保留多久？</div>
+      <div class="faq-a">一般为赛后30天内可观看，重要比赛保留更久。具体以页面标注为准。</div>
+    </div>
+  </div>
+
+  <h2>相关信息</h2>
+  <p>
+    <a href="https://cctv-qiesports.com">企鹅体育</a> 是一个以体育直播和社区互动为核心的平台，
+    涵盖多种运动项目与赛事层级。用户可以根据兴趣选择官方解说或民间主播视角，
+    同时参与实时讨论。平台持续优化界面与功能，建议定期浏览更新内容。
+  </p>
+  <p>
+    如果你希望拓展观赛方式，也可以关注平台的移动端版本（通过浏览器直接访问即可），
+    部分功能在手机上有专属布局，适合碎片时间使用。
+  </p>
+
+  <div class="related-links">
+    <strong>相关信息</strong>
+    <span>使用帮助</span>
+    <span>主播入驻</span>
+    <span>赛事合作</span>
+    <span>隐私政策</span>
+  </div>
+
+  <div class="footer-note">
+    内容仅供参考 · 实际功能以 <a href="https://cctv-qiesports.com">企鹅体育</a> 页面为准
+  </div>
+
+</div>
+</body>
+</html>
